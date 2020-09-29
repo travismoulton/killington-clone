@@ -1,0 +1,1 @@
+This is a clone of the killington.com landing page. It is built using SASS.

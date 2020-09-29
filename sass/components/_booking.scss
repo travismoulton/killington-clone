@@ -1,0 +1,65 @@
+.booking {
+    &__top-row {
+        list-style: none;
+        display: flex;
+        margin-top: 3.5rem;
+
+        @media only screen and (max-width: $bp-1060) {
+            flex-direction: column;
+        }
+        
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-size: 1.8rem;
+            background-color: #c4c4bf;
+            color: #4a4a4a;
+            border-radius: .3125rem;
+            margin-right: .0625rem;
+            margin-left: .0625rem;
+            text-transform: uppercase;
+            width: 100%;
+            padding: 1.7rem 2rem 1.4rem 2rem;  
+            transition: all .2s;      
+            cursor: pointer;
+
+            @media only screen and (max-width: $bp-1060) {
+                &:not(:last-child) { margin-bottom: 2rem; }
+            }
+
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $color-primary;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            &:hover {
+                background-color: $color-primary;
+
+                & span {
+                    color: $color-white;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__bottom-row {
+        margin-top: 3.5rem;
+    }
+}

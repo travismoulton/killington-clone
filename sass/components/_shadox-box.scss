@@ -1,0 +1,69 @@
+.shadow-box {
+    position: absolute;
+    width: 80%;
+    padding: 4rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all .2s;
+    z-index: 1;
+
+    // Overflow hidden is helping with the animation effect of the before element.
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-1060) { width: 95%; }
+
+    &--black::before,
+    &--white::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: translateY(100%);
+        transition: transform .2s,
+                    width .4s cubic-bezier(1,0,0,1) .2s,
+                    background-color .1s;
+        z-index: -1;
+    }
+
+    &--black {
+        bottom: 3rem;
+        right: 3rem;
+        background-image: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,.75));
+
+        &::before { background-color: $color-black; }
+
+        @media only screen and (max-width: $bp-1060) {
+            bottom: 1.5rem;
+            right: 1.5rem;
+        }
+
+
+    }
+
+    &--white {
+        bottom: 1.6rem;
+        right: 1.6rem;
+        background-image: linear-gradient(to top, rgba($color-white, .75), rgba($color-white, .75));
+
+        &::before { background-color: $color-white; }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        transition: all .2s;
+
+        &--black { color: $color-white; }
+        &--white { color: $color-black; }
+    }
+
+    & .heading_tertiary,
+    & .btn,
+    &__text {
+        z-index: 1;
+    }
+
+
+}

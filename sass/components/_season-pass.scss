@@ -1,0 +1,15 @@
+.season-pass {
+    &__left {
+        //grid-column: 1 / 2;
+        background-image: url(../img/guy-on-bike.jpg);
+
+        
+
+    }
+
+    &__right {
+        //grid-column: 2 / 3;
+        background-image: url(../img/ski-lift.jpg);
+
+    }
+}

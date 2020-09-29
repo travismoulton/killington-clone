@@ -1,0 +1,98 @@
+.popup{
+
+    // BEAST POPUP
+    &__beast {
+        &-top-grid {
+            display: grid;
+            //grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+            grid-template-rows: min-content;
+            grid-column-gap: 8rem;
+            grid-row-gap: 3rem;
+            margin: 8rem 0;
+            align-items: center;
+
+            &-left {
+                width: 100%;
+            }
+
+            &-right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+
+        &-h3 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-transform: uppercase;
+
+            &--centered { text-align: center; }
+
+            &--light { font-weight: 300; }
+        }
+
+        &-p {
+            font-size: 1.6rem;
+            line-height: 1.5; 
+        }
+
+        &-table {
+            width: 100%;
+            font-size: 1.8rem;
+
+            &--row {    
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                border-bottom: 2px solid #ddd;
+                vertical-align: center;
+            }
+
+            &--data {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .85rem 0;
+            }
+
+            &--first-col { margin: auto 0; }
+        }
+
+        &-365-pass-details {
+            margin-top: 5rem;
+        }
+
+        &-list {
+            font-size: 2rem;
+            margin-left: 3rem;
+
+            &-item {
+                line-height: 1.5;
+                margin-bottom: .5rem;
+            }
+
+            &--sub-list {
+                margin-left: 3rem;
+                list-style-type: disc;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &--span {
+            cursor: pointer;
+            color: $color-primary;
+            transition: all .3s;
+
+            &:hover { color: $color-blue; }
+        }
+
+        &-perks { margin-top: 4.5rem; }
+
+        &-promise { margin-top: 4.5rem; }
+
+        &-footer { margin-top: 5rem; }
+    }
+}

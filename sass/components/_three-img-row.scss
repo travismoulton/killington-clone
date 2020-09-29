@@ -1,0 +1,35 @@
+.three-img-row {
+    grid-column: 1 / -1;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 7.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    //grid-template-columns: repeat(auto-fit, minmax(65rem, 1fr));
+    grid-template-rows: min-content;
+
+    @media only screen and (max-width: $bp-1060) {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content repeat(4, 50rem);
+        grid-row-gap: 2rem;
+    }
+
+    &__left,
+    &__middle,
+    &__right {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        &:hover .shadow-box--white::before {
+            transform: translateY(0)
+        }
+
+        &:hover .shadow-box__text--white,
+        &:hover .heading-tertiary {
+            color: $color-blue;
+
+        }
+    }
+}

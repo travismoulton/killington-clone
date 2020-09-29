@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what one rem is
+    font-size: 62.5%; // 1rem = 10px;
+
+    @media only screen and (max-width: $bp-1300) { font-size: 50%; } // 1rem = 8px
+
+    //@media only screen and (max-width: $bp-900) { font-size: 43.75%; } // 1rem = 7px
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ 

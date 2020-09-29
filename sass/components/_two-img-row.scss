@@ -1,0 +1,32 @@
+.two-img-row {
+    grid-column: 1 / -1;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    //grid-template-columns: repeat(auto-fit, minmax(65rem, 1fr));
+    grid-template-rows: repeat(2, 39rem);
+    grid-row-gap: 3rem;
+
+    @media only screen and (max-width: $bp-1060) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 39rem);
+        grid-row-gap: 2rem;
+    }
+
+    &__left,
+    &__right {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        &:hover .shadow-box--black::before {
+            transform: translateY(0)
+        }
+
+        &:hover .shadow-box__text--black {
+            color: $color-primary;
+        }
+    }
+}

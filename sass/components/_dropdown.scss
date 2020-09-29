@@ -1,0 +1,66 @@
+.dropdown {
+
+    &__content {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background-color: $color-white;
+        padding: 6rem 10%;   
+        transition: visibility .2s;
+
+        &--4-col {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &--5-col {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        &-header {
+            text-transform: uppercase;
+            font-size: 2.4rem;
+            font-weight: 300;
+            margin-bottom: 1.3rem;
+        }
+
+        &-p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            cursor: pointer;
+            transition: color .2s;
+
+            &:not(:last-child) { margin-bottom: 1.3rem; }
+
+            &:hover { color: $color-primary; }
+        }
+    }
+
+    &:hover &__content { 
+        visibility: visible;
+    }
+
+    &:hover &__content-header {
+        animation-name: moveInUp;
+        animation-duration: .6s;
+        animation-timing-function: ease-out;
+    }
+
+    &:hover &__content-p {
+        animation-name: moveInUp;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+
+    }
+
+    &__col {
+        &-wrapper {
+            border-left: 2px solid #ddd;
+            padding: 0 2.5rem;
+        }
+    }
+
+}

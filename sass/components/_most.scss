@@ -1,0 +1,30 @@
+.most {
+    margin-top: 3rem;
+
+
+    & .heading-secondary {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+    }
+
+    &__left {
+        background-image: url(../img/summer-gondola.jpg);
+        grid-column: 1 / 2;
+
+        @media only screen and (max-width: $bp-1060) { grid-column: 1 / -1; }
+    }
+
+    &__middle {
+        background-image: url(../img/elevated-dining.jpg);
+        grid-column: 2 / 3;
+
+        @media only screen and (max-width: $bp-1060) { grid-column: 1 / -1; }
+    }
+
+    &__right {
+        background-image: url(../img/child-care.jpg);
+        grid-column: 3 / 4;
+
+        @media only screen and (max-width: $bp-1060) { grid-column: 1 / -1; }
+    }
+}

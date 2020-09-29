@@ -1,0 +1,21 @@
+.happening {
+    grid-template-rows: min-content;
+
+    & .heading-secondary {
+        grid-column: 1 / -1;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__left {
+        //grid-column: 1 / 2;
+        background-image: url(../img/tree-pic.jpg);
+
+    }
+
+    &__right {
+        //grid-column: 2 / 3;
+        background-image: url(../img/ikon-pass-bg.jpg);
+
+    }
+}

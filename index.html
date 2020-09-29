@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Killington</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__warning">
+        <p>
+          COVID 19 UPDATE: Limited Summer Operations Open for Vermont Resudents/Eligible Visitors. Masks Required.
+          <a href="#" class="header__warning-link">LEARN MORE</a>
+        </p>
+        <svg class="header__warning-close-btn">
+          <use xlink:href="img/sprite.svg#icon-circle-with-cross"></use>
+        </svg>
+      </div>
+
+      <!-- NAVIGATION -->
+      <ul class="nav">
+        <li class="nav__item nav__item--logo-box">
+            <img src="img/site-logo-desktop-translucent.svg" alt="logo" class="nav__item-logo">
+        </li>
+
+        <li class="nav__item nav__item--basic dropdown js--nav">
+          <a href="#" class="nav__item-link nav__item-link--basic">The Mountain</a>
+          <div class="nav__item-hover-triangle"></div>          
+          <div class="dropdown__content">
+            <div class="dropdown__content--4-col">
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Condintions & Weather</h3>
+                  <p class="dropdown__content-p">Current Conditions & Weather</p>
+                  <p class="dropdown__content-p">Lifts and Trails Report</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Trail & Area Maps</h3>
+                  <p class="dropdown__content-p">Bike Park Trail Guide</p>
+                  <p class="dropdown__content-p">Hiking Trail Guide</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Mountain Info</h3>
+                  <p class="dropdown__content-p">Request Call Back</p>
+                  <p class="dropdown__content-p">Coronavirus (COVID-19)</p>
+                  <p class="dropdown__content-p">Mountain Improvements</p>
+                  <p class="dropdown__content-p">Operating Schedule</p>
+                  <p class="dropdown__content-p">Mountain Stats</p>
+                  <p class="dropdown__content-p">Mountain Safety</p>
+                  <p class="dropdown__content-p">Mountain Policies</p>         
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Webcams</h3>
+                  <div class="dropdown__img-box">
+                    <img src="img/GetOneShot.jpeg" alt="getoneshot" class="dropdown__img">
+                  </div>
+                  <p class="dropdown__content-p">Mountain</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item nav__item--basic dropdown js--nav">
+          <a href="#" class="nav__item-link nav__item-link--basic">Plan your trip</a>
+          <div class="nav__item-hover-triangle"></div>
+          <div class="dropdown__content">
+            <div class="dropdown__content--4-col">
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">know before you go</h3>
+                  <p class="dropdown__content-p">20/21 Winter Operations</p>
+                  <p class="dropdown__content-p">Planes, Trains, and Buses</p>
+                  <p class="dropdown__content-p">Directions</p>
+                  <p class="dropdown__content-p">Base Areas and Parking</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Summer Activites</h3>
+                  <p class="dropdown__content-p">Bike Park</p>
+                  <p class="dropdown__content-p">Golf</p>
+                  <p class="dropdown__content-p">Adventure Center</p>
+                  <p class="dropdown__content-p">Scenic Gondola Rides</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Lodging & Vacation Packages</h3>
+                  <p class="dropdown__content-p">Vacation Packages</p>
+                  <p class="dropdown__content-p">Killington Grand Resort Hotel</p>
+                  <p class="dropdown__content-p">Killington Managed Lodging</p>
+                  <p class="dropdown__content-p">Featured Regional Lodging</p>
+                  <p class="dropdown__content-p">Other Regional Lodging</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Groups, Meetings & Weddings</h3>
+                  <p class="dropdown__content-p">Groups</p>
+                  <p class="dropdown__content-p">Meetings & Conferences</p>
+                  <p class="dropdown__content-p">Weddings</p>
+                  <p class="dropdown__content-p">Events & Meeting Spaces</p>
+                  <p class="dropdown__content-p">Catering Services</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item nav__item--basic dropdown js--nav">
+          <a href="#" class="nav__item-link nav__item-link--basic">Things to do</a>
+          <div class="nav__item-hover-triangle"></div>
+          <div class="dropdown__content">
+            <div class="dropdown__content--5-col">
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Events</h3>
+                  <p class="dropdown__content-p">Event Calendar</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Amenities</h3>
+                  <p class="dropdown__content-p">Killington Grand Spa</p>
+                  <p class="dropdown__content-p">Child Care</p>
+                  <p class="dropdown__content-p">Pico Fitness Center</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Shopping</h3>
+                  <p class="dropdown__content-p">Killington Sports Online Shop</p>
+                  <p class="dropdown__content-p">Killington Sports</p>
+                  <p class="dropdown__content-p">Regional Shopping and Services</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Must-Do at Killington</h3>
+                  <p class="dropdown__content-p">Top 10</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Dining & Apres</h3>
+                  <p class="dropdown__content-p">Resort Dining</p>
+                  <p class="dropdown__content-p">Preston's</p>
+                  <p class="dropdown__content-p">Regional Dining</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item nav__item--basic dropdown js--nav">
+          <a href="#" class="nav__item-link nav__item-link--basic">Culture</a>
+          <div class="nav__item-hover-triangle"></div>
+          <div class="dropdown__content">
+            <div class="dropdown__content--5-col">
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Beast Culture</h3>
+                  <p class="dropdown__content-p">Videos</p>
+                  <p class="dropdown__content-p">4241 Magazine</p>
+                  <p class="dropdown__content-p">Insider Blog</p>
+                  <p class="dropdown__content-p">Social Feed</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Play Forever</h3>
+                  <p class="dropdown__content-p">Play Forever Pledge</p>
+                  <p class="dropdown__content-p">Programs & Practices</p>
+                  <p class="dropdown__content-p">About Play Forever</p>
+                  <p class="dropdown__content-p">Play it Forward</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Audi FIS SKI WORLD CUP</h3>
+                  <p class="dropdown__content-p">The Killington Cup</p>
+                  <p class="dropdown__content-p">Be Fast & Be Fearless</p>
+                  <p class="dropdown__content-p">Spectator Information</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Community</h3>
+                  <p class="dropdown__content-p">Resort & Hospitality Management</p>
+                  <p class="dropdown__content-p">The Killington Valley</p>
+                  <p class="dropdown__content-p">Giving & Donation Requests</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Jobs</h3>
+                  <p class="dropdown__content-p">Why Work at Killington?</p>
+                  <p class="dropdown__content-p">Featured Jobs</p>
+                  <p class="dropdown__content-p">Employment Information</p>
+                  <p class="dropdown__content-p">Apply Now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="nav__item nav__item--woodward dropdown js--nav-woodward">
+          <a href="#" class="nav__item-link nav__item-link--woodward">Woodward</a>
+          <div class="dropdown__content">
+            <div class="dropdown__content--5-col">
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">About woodward killington</h3>
+                  <p class="dropdown__content-p">What is woodward Killington?</p>
+                  <p class="dropdown__content-p">FAQ</p>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Mountain Park</h3>
+                  <div class="dropdown__content-p">Mountain Park Overview</div>
+                  <div class="dropdown__content-p">Start park</div>
+                  <div class="dropdown__content-p">Progression Parks</div>
+                  <div class="dropdown__content-p">Family Cross</div>
+                  <div class="dropdown__content-p">Peace Park</div>
+                  <div class="dropdown__content-p">The Stash</div>
+                  <div class="dropdown__content-p">Lil' Stash</div>
+                  <div class="dropdown__content-p">Red's Backyard</div>
+                  <div class="dropdown__content-p">Dream Maker</div>
+                  <div class="dropdown__content-p">Pop Up Parks</div>
+                </div>
+              </div>
+              <div class="dropdown__col">
+                <div class="dropdown__col-wrapper">
+                  <h3 class="dropdown__content-header">Wrecktangle</h3>
+                  <p class="dropdown__content-p">Woodward Wrecktangle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__end-box">
+          <ul class="nav__end-box-list">
+            <li class="nav__end-box-list-item nav__end-box-list-item--register"><span class="nav__end-box-list-item--register-span">Register</span></li>
+            <li class="nav__end-box-list-item">Log In</li>
+            <li class="nav__end-box-list-item">My cart (0)</li>
+          </ul>
+          <div class="nav__end-box-bottom">
+            <div class="nav__end-box-bottom--left">
+              <svg class="nav__end-box-weather-icon">
+                <use xlink:href="img/sprite.svg#icon-light-up"></use>
+              </svg>
+              60&deg;
+              <svg class="nav__end-box-triangle-icon">
+                <use xlink:href="img/sprite.svg#icon-triangle-down"></use>
+              </svg>
+            </div>
+            <div class="nav__end-box-bottom--right">
+              <p>shop online</p>            
+              <button class="nav__end-box-bottom--right-btn"></button>            
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- HEADER MESSAGING -->
+      <div class="header__text-box">
+        <h1 class="heading-primary">bike parks open daily</h1>
+        <p class="mb-sm">Advanced purchase required</p>
+        <a href="#" class="btn btn--black-and-green">Learn More</a>
+      </div>
+    </header>
+
+    <!-- SEASON PASS SECTION -->
+    <section class="season-pass two-img-row">
+      <div class="two-img-row__left season-pass__left">
+        <div class="shadow-box shadow-box--black">
+          <h3 class="heading-tertiary heading-tertiary--green">Beast 365 all season pass</h3>
+          <p class="shadow-box__text shadow-box__text--black mb-sm">Unlimited year-round access at Killington and Pico plus an Ikon Base Pass</p>
+          <a href="#beast-popup" class="btn btn--green-and-white js--popup-btn">Learn More</a>
+        </div>
+      </div>
+      <div class="two-img-row__right season-pass__right">
+        <div class="shadow-box shadow-box--black">
+          <h3 class="heading-tertiary heading-tertiary--green">Winter 2020/21 Season passes on sale</h3>
+          <p class="shadow-box__text shadow-box__text--black mb-sm">
+            More days, More perks, More reasons to be a Killington passholder. All season passes are now covered by the new Pass Holder Promise, designed to help you plan and buy with confidence
+          </p>
+          <a href="#" class="btn btn--green-and-white">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking">
+      <ul class="booking__top-row">
+        <li class="booking__top-row-item"><span>lodging & packages</span></li>
+        <li class="booking__top-row-item"><span>bike park</span></li>
+        <li class="booking__top-row-item"><span>adventure center</span></li>
+      </ul>
+      <div class="booking__bottom-row">
+        <form action="#" class="form">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Start Date" id="startdate" required>
+            <svg class="form__icon--calendar">
+              <use xlink:href="img/sprite.svg#icon-clipboard"></use>
+            </svg>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Nights" id="nights" required>
+            <svg class="form__icon--arrow-down">
+              <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+            </svg>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Adults" id="adults" required>
+            <svg class="form__icon--arrow-down">
+              <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+            </svg>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Children" id="children" required>
+            <svg class="form__icon--arrow-down">
+              <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+            </svg>
+          </div>
+          <button class="btn btn--search">search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- HAPPENING SECTION -->
+    <section class="happening two-img-row">
+      <h2 class="heading-secondary mb-md">What's happening at killington</h2>
+      <div class="two-img-row__left happening__left">
+        <div class="shadow-box shadow-box--black">
+          <h3 class="heading-tertiary heading-tertiary--green">book your fall vacation</h3>
+          <p class="shadow-box__text shadow-box__text--black mb-sm">
+            Don't miss foliage season in killington. Book lodging and activites together for the best deal.
+          </p>
+          <a href="#" class="btn btn--green-and-white">Learn More</a>
+        </div>
+      </div>
+      <div class="two-img-row__right happening__right">
+        <div class="shadow-box shadow-box--black">
+          <h3 class="heading-tertiary heading-tertiary--green">ikon pass</h3>
+          <p class="shadow-box__text shadow-box__text--black mb-sm">
+            Sweet days await us. Unlock a season of adventure with access to unique destinations worldwide.
+          </p>
+          <a href="#ikon-popup" class="btn btn--green-and-white js--popup-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section class="events" id="section-events">
+      <h2 class="heading-secondary mb-md">events calendar</h2>
+      <div class="events__left">
+        <div class="events__box">
+          <div class="events__box-calendar">
+            <span class="events__box-calendar--top">fri - fri</span>
+            <span class="events__box-calendar--middle">10-25</span>
+            <span class="events__box-calendar--bottom">jul-sep</span>
+          </div>
+          <div class="events__box-content">
+            <h3 class="events__box-content-header">killington farmers market</h3>
+            <p class="events__box-text">
+              Produce fresh from the farm every friday, all summer long.
+            </p>
+            <a href="#farm-popup"class="btn btn--black-and-green js--popup-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="events__right">
+        <div class="events__box events__box--animated">
+          <div class="events__box-calendar">
+            <span class="events__box-calendar--top">fri - fri</span>
+            <span class="events__box-calendar--middle">7-2</span>
+            <span class="events__box-calendar--bottom">aug-oct</span>
+          </div>
+          <div class="events__box-content">
+            <h3 class="events__box-content-header">divas of dirt group rides</h3>
+            <p class="events__box-text">
+              Ladies only group rides every other Friday from august 7 through October 2.
+            </p>
+            <a href="#" class="btn btn--black-and-green">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOST SECTION -->
+    <section class="most three-img-row">
+      <h2 class="heading-secondary">getting the most out of killington</h2>
+      <div class="three-img-row__left most__left">
+        <div class="shadow-box shadow-box--white">
+          <h3 class="heading-tertiary">must do at killington</h3>
+          <p class="shadow-box__text shadow-box__text--white mb-sm">
+            Never been to Killington Resort during summer before? Here are the top 10 things to do while you're here.
+          </p>
+          <a href="#" class="btn btn--black-and-green mt-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="three-img-row__middle most__middle">
+        <div class="shadow-box shadow-box--white">
+          <h3 class="heading-tertiary">elevated dining</h3>
+          <p class="shadow-box__text shadow-box__text--white mb-sm">
+            From lunch atop Vermont's second highest peak to drinks by Snowshed Pond, Killington Resort is home to the best in resort dining.
+          </p>
+          <a href="#" class="btn btn--black-and-green mt-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="three-img-row__right most__right">
+        <div class="shadow-box shadow-box--white">
+          <h3 class="heading-tertiary">childcare</h3>
+          <p class="shadow-box__text shadow-box__text--white mb-sm">
+            We have plenty of kid-friendly activities but if your plans call for a few kid-free hours to explore The Beast, we've got you covered.
+          </p>
+          <a href="#" class="btn btn--black-and-green mt-sm">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUMMER SECTION -->
+    <section class="summer">
+      <div class="summer__grid summer__grid--1">
+        <div class="summer__grid-content">
+          <h3 class="summer__heading">Summer Jobs</h3>
+          <div class="summer__btn">
+            <svg class="summer__icon--plus">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+          </div>
+          <div class="summer__bg"></div>
+        </div>
+      </div>
+      <div class="summer__grid summer__grid--2">
+        <div class="summer__grid-content">
+          <h3 class="summer__heading">golf</h3>
+          <div class="summer__btn">
+            <svg class="summer__icon--plus">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+          </div>
+          <div class="summer__bg"></div>
+        </div>
+      </div>
+      <div class="summer__grid summer__grid--3">
+        <div class="summer__grid-content">
+          <h3 class="summer__heading">weddings</h3>
+          <div class="summer__btn">
+            <svg class="summer__icon--plus">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+          </div>
+          <div class="summer__bg"></div>
+        </div>
+      </div>
+      <div class="summer__grid summer__grid--4">
+        <div class="summer__grid-content">
+          <h3 class="summer__heading">learn to mountain</h3>
+          <div class="summer__btn">
+            <svg class="summer__icon--plus">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+          </div>
+          <div class="summer__bg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALERTS SECTION -->
+    <section class="alerts">
+      <div class="alerts__icons-wrapper">
+        <div class="alerts__icon-bg">
+          <svg class="alerts__icon">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </div>
+        <div class="alerts__icon-bg">
+          <svg class="alerts__icon">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </div>
+        <div class="alerts__icon-bg">
+          <svg class="alerts__icon">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </div>
+        <div class="alerts__icon-bg">
+          <svg class="alerts__icon">
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="alerts__form">
+        <label for="alerts-email" class="alerts__form--label">
+          sign up for alerts, specials, and news
+        </label>
+        <div class="alerts__form-wrapper">
+          <input type="email" class="alerts__form--input" placeholder="E-mail address" required>
+          <a href="#" class="alerts__form--btn">Go</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__more">
+        <h3 class="footer__heading">MORE ABOUT US</h3>
+        <ul class="footer__more-list">
+          <li class="footer__more-list-item">Privacy Policy</li>
+          <li class="footer__more-list-item">Terms of Use</li>
+          <li class="footer__more-list-item">Media Room</li>
+          <li class="footer__more-list-item">Contact Us</li>
+          <li class="footer__more-list-item">Employment</li>
+          <li class="footer__more-list-item">Accessibility</li>
+        </ul>
+      </div>
+      <div class="footer__partners">
+        <h3 class="footer__heading">our partners</h3>
+        <ul class="footer__partners-list">
+          <li class="footer__partners-list-item">subaru</li>
+          <li class="footer__partners-list-item">coca cola</li>
+          <li class="footer__partners-list-item">nokian tires</li>
+          <li class="footer__partners-list-item">gopro</li>
+          <li class="footer__partners-list-item">red bull</li>
+          <li class="footer__partners-list-item">bud light</li>
+          <li class="footer__partners-list-item">yeti</li>
+        </ul>
+      </div>
+      <div class="footer__connect">
+        <h3 class="footer__heading">connect with us</h3>
+        <div class="footer__connect-icons-wrapper">
+          <div class="footer__connect-icon-bg">
+            <svg class="footer__connect-icon">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </div>
+          <div class="footer__connect-icon-bg">
+            <svg class="footer__connect-icon">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </div>
+          <div class="footer__connect-icon-bg">
+            <svg class="footer__connect-icon">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </div>
+          <div class="footer__connect-icon-bg">
+            <svg class="footer__connect-icon">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="footer__powdr">
+        <h3 class="footer__heading">powdr's adventure lifestyle brands</h3>
+        <ul class="footer__powdr-list">
+          <li class="footer__powdr-list-item">powdr</li>
+          <li class="footer__powdr-list-item">boreal</li>
+          <li class="footer__powdr-list-item">copper mountain</li>
+          <li class="footer__powdr-list-item">eldora</li>
+          <li class="footer__powdr-list-item">killington</li>
+          <li class="footer__powdr-list-item">lee canyon</li>
+          <li class="footer__powdr-list-item">mr bachelor</li>
+          <li class="footer__powdr-list-item">snowbird</li>
+          <li class="footer__powdr-list-item">outside tv</li>
+          <li class="footer__powdr-list-item">soda</li>
+          <li class="footer__powdr-list-item">pico mountian</li>
+          <li class="footer__powdr-list-item">powderbird</li>
+          <li class="footer__powdr-list-item">woodward</li>
+          <li class="footer__powdr-list-item">silver star</li>
+        </ul>
+      </div>
+      <div class="footer__logo-box">
+        <img src="img/site-logo-desktop-footer.svg" alt="logo" class="footer__logo-img">
+      </div>
+      <div class="footer__copyright">
+        &#169; Killington - Welcome to the Beast 2020
+      </div>
+    
+    </footer>
+
+  </div>
+
+  <!-- FARMER'S MARKET POPUP -->
+  <div class="popup" id="farm-popup">
+    <div class="popup__content">
+      <div class="popup__content--header">
+        <h2 class="heading-popup mb-225">Killington farmers market</h2>
+      </div>
+      <div class="popup__content--header-secondary">
+        <svg class="popup__icon--calendar">
+          <use xlink:href="img/sprite.svg#icon-calendar"></use>
+        </svg>
+        <h3 class="heading-tertiary">july 10th 2020 </h3>
+        <h3 class="heading-tertiary"> - september 25th 2020</h3>
+      </div>
+      <div class="popup__farm">
+        <p>Every Friday through September 25, the Killington Farmers Market takes place at the new location - Killington Sports at Rt 4.</p>
+        <ul class="popup__farm-list">
+          <li class="popup__farm-list-item"> Attendees of the market should park behind Killington Sports @Rt4.</li>
+          <li class="popup__farm-list-item">Please follow the suggested on-way flow of traffic through the mmarket.</li>
+          <li class="popup__farm-list-item">
+            In conjunction with Vermont's executive order and our resort policy, masks covering the nose and mouth are required at all times at the resort, 
+            both indoors and outdoors, except while on a bike or hiking trail, on the golf course, or seated while eating and drinking.
+          </li>
+          <li class="popup__farm-list-item">
+            Most vendors will accept credit cards however some will be cash only. Please plan accordingly however there is an ATM onsite.
+          </li>
+          <li class="popup__farm-list-item">Don't forget your reusable grocery bag!</li>
+          <li class="popup__farm-list-item">Restrooms are available inside Killington Sports at Rt4 - you will be required to wear a mask while utilizing them.</li>
+        </ul>
+      </div>
+      <a href="#" class="btn btn--black-and-green">More Information</a>
+      <div class="popup__hours">
+        <p class="popup__hours--hours">hours:</p>
+        <ul>
+          <li>3:00-6:00 p.m</li>
+        </ul>
+      </div>
+      <div class="popup__close-btn js--popup-btn">
+        <a href="#section-events">
+          <svg class="popup__icon--x">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- IKON PASS POPUP -->
+  <div class="popup" id="ikon-popup">
+    <div class="popup__content">
+      <div class="popup__content-header">
+        <h2 class="heading-popup mb-225">ikon pass</h2>
+      <div class="popup__ikon">
+        <div class="popup__ikon-top-grid">
+          <img src="img/snowboarders-PresWeek.jpg" alt="snowboarders" class="popup__ikon-top-grid-left">
+          <div class="popup__ikon-top-grid-right">
+            <p class="popup__ikon-top-grid-right-header">winter 2020-21</p>
+            <img src="img/ikon-logo-300x150.jpg" alt="logo" class="popup__ikon-top-grid-right-img">
+            <p class="popup__ikon-p">Discover the Ikon Pass. Unlock 44 unique destinations worldwide. Sweet days await us.</p>
+            <a href="#" class="btn btn--black-and-green mt-md">BUY NOW</a>
+          </div>
+        </div>
+
+        <div class="popup__ikon-table">
+          <div class="popup__ikon-table-row">
+            <div class="popup__ikon-table-row-header"></div>
+            <div class="popup__ikon-table-row-header">Ikon Pass</div>
+            <div class="popup__ikon-table-row-header">Ikon Base Pass</div>
+            <div class="popup__ikon-table-row-header">Ikon Session 4-day pass</div>
+          </div>
+          <div class="popup__ikon-table-row">
+            <div class="popup__ikon-table-row-first-col">Adult (23+)</div>
+            <div class="popup__ikon-table-row-entry">$999</div>
+            <div class="popup__ikon-table-row-entry">$699</div>
+            <div class="popup__ikon-table-row-entry">$399</div>
+          </div>
+          <div class="popup__ikon-table-row">
+            <div class="popup__ikon-table-row-first-col popup__ikon-table-row-first-col--renewal">Renewal</div>
+            <div class="popup__ikon-table-row-entry">$799</div>
+            <div class="popup__ikon-table-row-entry">$599</div>
+            <div class="popup__ikon-table-row-entry"></div>
+          </div>
+          <div class="popup__ikon-table-row">
+            <div class="popup__ikon-table-row-first-col">Young Adult (13-22)</div>
+            <div class="popup__ikon-table-row-entry">$739</div>
+            <div class="popup__ikon-table-row-entry">$539</div>
+            <div class="popup__ikon-table-row-entry">$339</div>
+          </div>
+          <div class="popup__ikon-table-row">
+            <div class="popup__ikon-table-row-first-col popup__ikon-table-row-first-col--renewal">Renewal</div>
+            <div class="popup__ikon-table-row-entry">$579</div>
+            <div class="popup__ikon-table-row-entry">$459</div>
+            <div class="popup__ikon-table-row-entry"></div>
+          </div>
+          <div class="popup__ikon-table-row">
+            <div class="popup__ikon-table-row-first-col">Child (5-12)</div>
+            <div class="popup__ikon-table-row-entry">$309</div>
+            <div class="popup__ikon-table-row-entry">$269</div>
+            <div class="popup__ikon-table-row-entry">$249</div>
+          </div>
+          <div class="popup__ikon-table-row">
+            <div class="popup__ikon-table-row-first-col">4 and Under</div>
+            <div class="popup__ikon-table-row-entry">$209</div>
+            <div class="popup__ikon-table-row-entry">$169</div>
+            <div class="popup__ikon-table-row-entry">$249</div>
+          </div>
+        </div>
+
+        <div class="popup__ikon-cards">
+          <div class="popup__ikon-cards-card">
+            <img src="img/card-1.jpg" alt="card1" class="popup__ikon-cards-card-top-row">
+            <div class="popup__ikon-cards-card-bottom-row">
+              <div class="popup__ikon-cards-card-bottom-row-text">
+                <h3 class="popup__ikon-cards-card-bottom-row-text-header">ikon pass</h3>
+                <p class="popup__ikon-cards-card-bottom-row-text-p">Seek endless adventure all season long across 44 global destinations, with more accss and no blackout dates.</p>
+              </div>
+              <a href="#" class="btn btn--black-and-green">BUY NOW</a>
+            </div>
+          </div>
+          <div class="popup__ikon-cards-card">
+            <img src="img/card-2.jpg" alt="card1" class="popup__ikon-cards-card-top-row">
+            <div class="popup__ikon-cards-card-bottom-row">
+              <div class="popup__ikon-cards-card-bottom-row-text">
+                <h3 class="popup__ikon-cards-card-bottom-row-text-header">ikon base pass</h3>
+                <p class="popup__ikon-cards-card-bottom-row-text-p">Kick start adventure with access to the same 44 unique destinations as the Ikon Pass, with holiday blackout periods</p>
+              </div>
+              <a href="#" class="btn btn--black-and-green">BUY NOW</a>
+            </div>
+          </div>
+          <div class="popup__ikon-cards-card">
+            <img src="img/card-3.jpg" alt="card1" class="popup__ikon-cards-card-top-row">
+            <div class="popup__ikon-cards-card-bottom-row">
+              <div class="popup__ikon-cards-card-bottom-row-text">
+                <h3 class="popup__ikon-cards-card-bottom-row-text-header">ikon session pass 4-day</h3>
+                <p class="popup__ikon-cards-card-bottom-row-text-p">4 days total at select destinations</p>
+              </div>
+              <a href="#" class="btn btn--black-and-green">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup__ikon-perks">
+          <img src="img/ikon-perks.jpg" alt="ikon perks" class="popup__ikon-perks-left">
+          <div class="pop__ikon-perks-right">
+            <h2 class="heading-popup mb-350">perks and discounts</h2>
+            <p class="popup__ikon-p mb-15">Ikon Pass comes with 10 Friends and Family tickets and the Ikon Base Pass comes with 8 Friends and Family tickets (with holiday restrictions) for 25% off of the window rate at all Ikon Pass or Ikon Base Pass destinations. </p>
+            <p class="popup__ikon-p mb-15">Friends and Family tickets may be purchased from any open ticket window at Killington or Pico. Passholder must be present at the ticket window when requesting Bring a Friend tickets.</p>
+            <p class="popup__ikon-p">Ikon Pass holders receive <strong>20%</strong> off select Killington lodging through Killington Central Reservations. <span class="popup__ikon--span">Book online</span> or call <span class="popup__ikon--span">800-621-MTNS</span> to book over the phone.</p>
+          </div>
+        </div>
+
+        <div class="popup__ikon-first-time">
+          <h2 class="heading-popup mb-sm">first time at killington?</h2>
+          <p class="popup__ikon-p mb-15">Your Ikon Pass gives your direct-to-lift access at both Killington and Pico, which means no waiting in ticket lines - just grab your gear and head straight to the lift. If you need your pass printed though, you'll need to stop in at Guest Services in either Snowshed or K-1 Base Lodges before hitting the hill. Visiting the biggest resort in Eastern North America means you’ll have access to more terrain than you can ski in a day, and it also means getting around on your first visit can be daunting. Lucky for you, we've gathered our top tips for making your first visit as easy as possible.</p>
+          <a href="#" class="btn btn--black-and-green">FIRST TIMERS GUIDE</a>
+        </div>
+
+        <div class="popup__ikon-consider">
+          <h3 class="heading-tertiary">consider pico mountain</h3>
+          <p class="popup__ikon-p mb-15">Your Ikon Pass includes access to our sister resort, <span class="popup__ikon--span">Pico Mountain</span>, located just 7 miles down the road. Open Thursday-Monday (open Tuesdays and Wednesdays for Christmas and President’s weeks), Pico offers big mountain skiing with small mountain charm. Make the easy drive yourself or hop on the Killington Rutland commuter shuttle operated by The Bus.</p>
+          <p class="popup__ikon-p mb-15">Days scanned at Pico Mountain will count toward your allotted days at Killington/Pico. If you choose to ski at both Pico and Killington on the same day, it will only count as one day.</p>
+          <a href="#" class="btn btn--black-and-green">LEARN MORE</a>
+        </div>
+
+        <div class="popup__ikon-footer">
+          <h3 class="heading-tertiary heading-tertiary--light">WHAT OTHER LOCATIONS ARE INCLUDED IN THE IKON PASS?</h3>
+          <a href="#" class="btn btn--black-and-green btn--ikon-footer">
+            SEE LIST
+            <svg class="popup__ikon-footer-svg">
+              <use xlink:href="img/sprite.svg#icon-triangle-down"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="popup__close-btn js--popup-btn">
+        <a href="#section-events">
+          <svg class="popup__icon--x">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- BEAST POPUP -->
+  <div class="popup" id="beast-popup">
+    <div class="popup__content">
+      <div class="popup__content--header">
+        <h2 class="heading-popup mb-225">beast 365 all season pass</h2>
+      </div>
+      <div class="popup__beast">
+        <div class="popup__beast-top-grid">
+          <img src="img/beast365.jpg" alt="BEAST" class="popup__beast-top-grid-left">
+          <div class="popup__beast-top-grid-right">
+            <div>
+              <h3 class="popup__beast-h3">
+                THIS PASS TURNS MORE INTO THE MOST YOU CAN EXPERIENCE AT KILLINGTON AND BEYOND ALL-YEAR LONG.
+              </h3>
+              <div class="popup__beast-p mt-md">
+                The Beast 365 Pass includes unlimited winter lift access at Killington and Pico plus access to 40 additional ski destinations with an included <span class="popup__beast--span">Ikon Base Pass</span>, and unlimited summer access to the bike park, adventure center, scenic gondola rides, and golf course.
+              </div>
+              <div class="popup__beast-p mt-md">
+                This pass also offers two different payment options. If you purchase on or before July 15, 2020 you can purchase the Beast 365 Pass as a monthly subscription. We'll charge you a smaller monthly fee for 12 months. You also have the option to pay in full at the time of purchase. The Beast 365 Pass is only available for purchase through October 15, 2020. After that date it will not be available for purchase again until spring 2021. 
+              </div>
+            </div>
+            <a href="#" class="btn btn--black-and-green">
+              BUY NOW
+            </a>
+          </div>
+        </div>
+
+        <table class="popup__beast-table">
+          <tr class="popup__beast-table--row">
+            <th></th>
+            <th>MONTHLY PAYMENTS (SIGN UP THROUGH JULY 15, 2020)</th>
+            <th>PAY IN FULL BEFORE JULY 16, 2020</th>
+            <th>PAY IN FULL JULY 16 - OCT. 15, 2020</th>
+          </tr>
+          <tr class="popup__beast-table--row">
+            <td class="popup__beast-table--first-col">Adult (30-64)</td>
+            <td class="popup__beast-table--data">$112/month</td>
+            <td class="popup__beast-table--data">$1,344</td>
+            <td class="popup__beast-table--data">$1,494</td>
+          </tr>
+          <tr class="popup__beast-table--row">
+            <td class="popup__beast-table--first-col">Senior (65+)</td>
+            <td class="popup__beast-table--data">$112/month</td>
+            <td class="popup__beast-table--data">$1,344</td>
+            <td class="popup__beast-table--data">$1,494</td>
+          </tr>
+          <tr class="popup__beast-table--row">
+            <td class="popup__beast-table--first-col">29-Below (19-29)</td>
+            <td class="popup__beast-table--data">$91/month</td>
+            <td class="popup__beast-table--data">$1,092</td>
+            <td class="popup__beast-table--data">$1,192</td>
+          </tr>
+          <tr class="popup__beast-table--row">
+            <td class="popup__beast-table--first-col">Youth (7-18)</td>
+            <td class="popup__beast-table--data">$81/month</td>
+            <td class="popup__beast-table--data">$972</td>
+            <td class="popup__beast-table--data">$1,072</td>
+          </tr>
+        </table>
+
+        <div class="popup__beast-p mt-md">
+          All pass sales are subject to 6% Vermont state and local tax. Age group for the Beast 365 Pass is determined by pass holder's age at time of purchase.
+        </div>
+
+        <div class="popup__beast-365-pass-details">
+          <div class="popup__beast-h3 mb-sm">beast 365 pass details</div>
+          <ul class="popup__beast-list">
+            <li class="popup__beast-list-item">
+              The Beast 365 Pass is only available for purchase through October 15, 2020. After that date it will not be available for purchase again until spring 2021.
+            </li>
+            
+            <li class="popup__beast-list-item">
+              There are two options for purchasing this pass: Pay in full or subscribe to the monthly payments. You must opt in before July 15, 2020 to take advantage of the monthly payment option. 
+            </li>
+            <li class="popup__beast-list-item">
+              If you opt for monthly payments:
+              <ul class="popup__beast-list--sub-list">
+                <li class="popup__beast-list-item">
+                  The first month's fee is due at time of purchase with the monthly fee being charged on the first day of each month thereafter beginning in July.
+                </li>
+                <li class="popup__beast-list-item">
+                  The monthly fee will continue indefinitely, purchasers will not need to sign up again next year.
+                </li>
+                <li class="popup__beast-list-item">
+                  12-month commitment is required with a debit or credit card on file for monthly payments (no gift cards), cannot be canceled. To cancel after the first 12 months, email your request to <span class="popup__beast--span">seasonpass@killington.com</span> or send it via mail. The full risk and billing agreement is available <span class="popup__beast--span">here</span>.
+                </li>
+              </ul>
+            </li>
+            <li class="popup__beast-list-item">If you opt to pay in full, you will need to re-purchase a pass again for next year.</li>
+            <li class="popup__beast-list-item">The pass is valid from the start of Summer 2020 mountain biking season through the end of Winter 2020-21.</li>
+            <li class="popup__beast-list-item">The included Ikon Base Pass does not provide access to Jackson Hole or Aspen Snowmass. There is no option to upgrade to the Ikon Base Plus Pass or full Ikon Pass.</li>
+            <li class="popup__beast-list-item">
+              <strong>To obtain your Ikon Base Pass:</strong> Beast 365 purchasers will receive a one-time code via email. Codes will be emailed on or after September 1, 2020 for redemption on ikonpass.com. If you purchase your Beast 365 Pass after September 1, you will receive your one-time code from us shortly after purchase. You must redeem your code on ikonpass.com by December 10, 2020.
+              <ul class="popup__beast-list--sub-list">
+                <li class="popup__beast-list-item">After completing your code redemption, you will be placed in the queue to receive your Ikon Base Pass along with all other Ikon Pass purchasers (mailing begins in September 2020). The Ikon Pass system will not allow us to print your pass for you at Killington/Pico. You will need to receive it in the mail or pick it up from another Ikon resort.</li>
+                <li class="popup__beast-list-item">Once you redeem your Ikon Base Pass, you become ineligible to cancel your pass under the Pass Holder Promise.</li>
+                <li class="popup__beast-list-item">The included Ikon Base Pass is not eligible for the Adventure Assurance program.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="popup__beast-promise">
+          <h3 class="popup__beast-h3 mb-sm">pass holder promise</h3>
+          <p class="popup__beast-p mb-xs">In response to the impact COVID-19 had on the 2019-20 season and uncertainty it is causing for the 2020-21 season, we are offering the Pass Holder Promise, which guarantees our commitment to the following:</p>
+          <p class="popup__beast-p mb-xs"><strong>NEW! In-Season 2020-21 COVID-19 Coverage:</strong> Qualifying passholders will receive a future use voucher if we are closed because of COVID-19 for 30 days or more, or if there is a 7 or more consecutive day COVID-19-related closure between December 1, 2020 and April 29, 2021. Please note that we still plan to offer the longest season in the East, we just aren’t offering protection for early or late season COVID-19 related closures in order to maximize the value of closures during the heart of the season. <span class="popup__beast--span">Click here for details.</span> </p>
+          <p class="popup__beast-p mb-xs"><strong>Vouchers:</strong> Qualifying 2019/20 season pass and unused K-Ticket holders will receive a voucher toward a 2020/21 season pass or K-Ticket. <span class="popup__beast--span">Click here for details.</span> </p>
+          <p class="popup__beast-p mb-xs"><strong>Refund Available:</strong>  We will issue a full refund before November 20, 2020 for any passholder who has not used his/her 2020/21 pass and desires a refund for any reason.</p>
+          <p class="popup__beast-p mb-xs"><strong>Best Pricing:</strong> Best pricing on 2020/21 season passes was extended through July 15, 2020.</p>
+          <p class="popup__beast-p mb-xs"><strong>Flexible Payment Plan:</strong> A payment plan is available for ease and flexibility through July 15, 2020.</p>
+          <p class="popup__beast-p mb-xs"><strong>Annual Subscription Pass:</strong> Our Beast 365 all season, unlimited subscription pass allows you to pay monthly with a pro-rated credit applied towards a future month if Killington is closed because of COVID-19 for 14 days or more, or there is a 7 or more consecutive day COVID-19-related closure in a month. A full month closure would result in a full month credit.</p>
+        </div>
+        <div class="popup__beast-perks">
+          <h3 class="popup__beast-h3 popup__beast-h3--centered mb-md">perks and discounts</h3>
+          <ul class="popup__beast-list">
+            <li class="popup__beast-list-item">
+              Bring a Friend Tickets *Passholder must be present at the ticket window when requesting Bring a Friend tickets.
+              <ul class="popup__beast-list--sub-list">
+                <li class="popup__beast-list-item">Twelve 50% off one-day adult window rate Killington lift tickets for winter 2020-21.</li>
+                <li class="popup__beast-list-item">Three FREE K-1 Gondola rides for summer 2020. Not valid during winter operations.</li>
+                <li class="popup__beast-list-item">Three FREE Bike Park lift tickets for summer 2020.</li>
+                <li class="popup__beast-list-item">Three FREE Adventure Center day passes for summer 2020.</li>
+                <li class="popup__beast-list-item">Three FREE Adventure Center day passes for summer 2020.</li>
+                <li class="popup__beast-list-item">One 25% off K-1 Gondola Scenic Rides, Adventure Center Day Pass, Mountain Bike lift ticket or Golf round per day for summer 2020.</li>
+              </ul>
+            </li>
+            <li class="popup__beast-list-item">Learn to Mountain Bike: 15% off Group and Private Mountain Bike lessons. Plus, receive one $39 learn to mountain bike package (valid midweek non-holiday) for summer 2020.</li>
+            <li class="popup__beast-list-item">Three FREE Midweek Standard Mountain Bike Rentals for summer 2020.</li>
+            <li class="popup__beast-list-item">Golf Lessons: 15% off group and private Golf lessons for summer 2020.</li>
+            <li class="popup__beast-list-item">Retail: 25% off non-sale items at Killington and Pico Sports stores</li>
+            <li class="popup__beast-list-item">Food & Beverage: 25% off food and non-alcoholic beverages at Killington owned base lodge and on-mountain outlets, the Clubhouse Grill and Preston's at the Grand Hotel</li>
+            <li class="popup__beast-list-item">Snow Sports School: 30% off group lessons every day; 30% off private lessons Sunday-Friday non-peak days. Not valid on seasonal programs.</li>
+            <li class="popup__beast-list-item">Lodging: 20% off select lodging through Killington Central Reservations. Book online or call 800-621-MTNS to book over the phone.</li>
+            <li class="popup__beast-list-item">Pico Fitness Center: 30% off memberships.</li>
+            <li class="popup__beast-list-item">Beast Mountain Coaster: Free rides during winter season.</li>
+            <li class="popup__beast-list-item">
+              Reciprocal Resort Offers:
+              <ul class="beast__popup-list--sub-list">
+                <li class="popup__beast-list-item">Receive two free tickets for your own use at Windham Bike Park. Simply show up at Windham with your pass and one other form of identification and receive your free tickets (one ticket per passholder per day).</li>
+                <li class="popup__beast-list-item">Receive two free tickets for your own use at Thunder Mountain Bike Park. Simply show up at Thunder Mountain with your pass and one other form of identification and receive your free tickets (one ticket per passholder per day).</li>
+                <li class="popup__beast-list-item">Discounted Mountain Creek Bike Park Tickets: 50% off midweek non-holiday; 25% off weekends and holidays. Present your Killington Bike Park season pass at the Mountain Creek Ticket window to receive your discount. Holiday dates are determined by Mountain Creek. Limit one ticket per day per pass holder. Discounted ticket valid for pass holder only.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="popup__beast-footer">
+          <h3 class="popup__beast-h3 popup__beast-h3--light">FOR MORE INFORMATION OR ASSISTANCE SELECTING OR PURCHASING YOUR KILLINGTON SEASON PASS, PLEASE CALL <span class="popup__beast--span">800-621-MTNS</span>.</h3>
+        </div>
+        
+        <div class="popup__close-btn js--popup-btn">
+          <a href="#section-events">
+            <svg class="popup__icon--x">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END BEAST POPUP -->
+  <script src="js/app.js"></script>
+</body>
+</html>

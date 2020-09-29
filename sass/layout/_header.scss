@@ -1,0 +1,312 @@
+.header {
+    grid-column: 1 / -1;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    position: relative;
+
+    &__warning {
+        background-color: #f0f0f0;
+        padding: 1.2rem 3rem;
+        font-size: 2rem;
+        font-weight: 300;
+        min-height: 5.6rem;
+        line-height: 1.7;
+
+        @media only screen and (max-width: $bp-1000) { 
+            padding: 1.2rem 1rem;
+            font-size: 1.6rem;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // Creating fixed positioning
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
+        &-link {
+            text-decoration: none;
+            color: $color-primary;
+            font-weight: 900;
+            margin-left: .75rem;
+        }
+
+
+        &-close-btn {
+            height: 4.3rem;
+            width: 4.3rem;
+            fill: $color-primary;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    transition: all .2s;
+
+    // Creating fixed positioning
+    position: fixed;
+    top: 6.7rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+   
+
+        &--logo-box {
+            flex: 0 0 18%;
+            background-color: $color-black;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-900) { flex-grow: 1; }
+        }
+    
+        &-logo {
+            height: 100%;
+            max-width: 100%;
+            
+            @media only screen and (max-width: $bp-900) { margin-right: auto; }
+        }
+
+        &-hover-triangle {
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $color-primary;
+                position: absolute;
+                transform: translateX(-40%);
+                z-index: 20;
+                opacity: 0;
+            }
+        }
+
+        &--basic {
+            background-color: rgba(255, 255, 255, .1);
+            flex: 2;
+
+            // When the device width is smaller this keeps the text of the link centered
+            text-align: center;
+
+            @media only screen and (max-width: $bp-900) { display: none; }
+
+            // Using element selector to work with JS scroll effect
+            & a { color: $color-white; }   
+
+            &:hover {
+                background-color: $color-primary;
+
+                & a { color: $color-white; }
+ 
+                .nav__item-hover-triangle::after { opacity: 1; }
+            }
+
+            &-white {
+                background-color: $color-white;
+                & a { color: $color-black; }            
+            }
+        }
+
+        &--woodward {
+            background-color: rgba(255, 255, 255, .1);
+            flex: 2;
+
+            @media only screen and (max-width: $bp-900) { display: none; }
+
+            // Using element selector to work with JS scroll effect
+            & a { color: $color-white; }
+
+            &-white {
+                background-color: $color-white;
+                flex: 1;
+
+                // Using element selector to work with JS scroll effect
+                & a { color: $color-woodward; }
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-black;
+            font-size: 2rem;
+            cursor: default;
+
+            // Setting flex grow to 1 allowed the a element to take up the entire container of the nav item. 
+            // Then setting the a element to a flex and aligning the item centers the text.
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+
+            &--basic {
+                font-weight: 400;
+                transition: all .2s;
+                position: relative;
+            }
+
+            &--woodward {
+                font-weight: bolder;
+                letter-spacing: 2px;
+                font-size: 2.2rem;
+            }
+        }
+    } 
+
+    &__end-box {
+        flex: 0 0 27rem;
+
+        &-list {
+            list-style: none;
+            display: flex;
+            background-color: $color-black;
+            color: $color-white;
+            text-transform: uppercase;
+            padding: .7rem;
+            font-size: 1.4rem;
+            justify-items: space-between;
+
+            &-item {
+                transition: all .2s;
+
+                &:not(:first-child) {
+                    &:hover {
+                        color: $color-primary;
+                        cursor: pointer;
+                    }
+                }
+
+                &--register {
+                    &::after {
+                        content: "OR";
+                        color: $color-primary;
+                        margin: 0 1rem 0 .5rem;
+                    }
+
+                    &-span {
+                        transition: all .2s;
+
+                        &:hover {
+                            color: $color-primary;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        &-bottom {
+            display: flex;
+
+            &--left {
+                flex: 0 0 60%;
+                background-color: $color-primary;
+                font-size: 2.7rem;
+                font-weight: 900;
+                padding: 1.5rem 3rem;
+                text-align: center;
+                position: relative;
+            }
+
+            &--right {
+                flex: 0 0 40%;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 800;
+                line-height: 1;
+                color: $color-primary;
+                background-color: $color-white;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                & p {
+                    width: min-content;
+
+                    @media only screen and (max-width: $bp-900) { display: none; }
+                }
+
+                &-btn {
+                    display: none;
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 0;
+                    background-color: $color-primary;
+                    height: 2px;
+                    width: 7.5rem;
+
+                    @media only screen and (max-width: $bp-900) { display: inline-block; }
+                
+                    &::before,
+                    &::after {
+                        background-color: $color-primary;
+                        height: 2px;
+                        width: 7.5rem;
+                        content: "";
+                        display: block;
+                    }
+                
+                    &::before { transform: translateY(-1.5rem); }
+                    &::after { transform: translateY(1.3rem); }
+                }
+            }
+        }
+
+        &-weather-icon,
+        &-triangle-icon {
+            height: 2rem;
+            width: 2rem;
+            fill: $color-white;
+            margin: 0;
+        }
+
+        &-triangle-icon {
+            position: absolute;
+            left: 53%;
+            bottom: 9%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.header__text-box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    & p {
+        color: $color-white;
+        font-size: 2.75rem;
+        letter-spacing: .125rem;
+        text-shadow: .125rem .125rem .625rem #000;
+        font-weight: 300;
+        margin-top: -1.7rem;
+    }
+}

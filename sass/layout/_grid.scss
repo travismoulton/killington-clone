@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+        [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-rows: [header-start]105rem [header-end season-pass-start] 41.75rem [ season-pass-end booking-start] min-content 
+            [booking-end happening-start] 51.25rem [happening-end events-start] 63rem [events-end most-start] 56.5rem 
+            [most-end summer-start]60rem  [summer-end alerts-start] 25rem [alerts-end footer-start] min-content [footer-end];
+    
+    @media only screen and (max-width: $bp-1060) {
+        grid-template-rows: [header-start]75rem [header-end season-pass-start] 82rem [ season-pass-end booking-start] min-content 
+        [booking-end happening-start] 82rem [happening-end events-start] 105rem [events-end most-start] 163rem 
+        [most-end summer-start] 207.5rem  [summer-end alerts-start] 25rem [alerts-end footer-start] min-content [footer-end];
+    }
+}

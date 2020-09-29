@@ -1,0 +1,94 @@
+// All popups
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s; 
+    background-color: rgba($color-primary, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:target {
+        opacity: 1;
+        visibility: visible;
+
+        & .popup__ikon,
+        & .popup__farm,
+        & .popup__beast {
+            opacity: 1;
+            visibility: visible;
+
+            animation-name: moveInUp;
+            animation-duration: .6s;
+            animation-timing-function: ease-out;
+        }
+    }
+
+    &__close-btn {
+        position: fixed;
+        top: 15rem;
+        right: 15rem;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-color: rgba($color-black, .8);
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: all .2s;
+
+        @media only screen and (max-width: $bp-1000) {
+            top: 8rem;
+            right: 8rem;
+        }
+
+        &:hover {
+            background-color: rgba($color-primary, .8);
+
+            .popup__icon--x { fill: $color-white; }
+        }
+    }
+
+    &__icon--x {
+        fill: $color-primary;
+        height: 2rem;
+        width: 2rem;
+        margin-top: 2rem;
+        transition: all .2S;
+    }
+
+    &__content {
+        background-color: $color-white;
+        width: calc(100% - 20rem);
+        height: calc(100% - 20rem);
+        padding: 4.5rem 12rem;
+        border-radius: 1.7rem;
+        position: relative;
+        overflow-y: scroll;
+
+        @media only screen and (max-width: $bp-1000) {
+            width: calc(100% - 10rem);
+            height: calc(100% - 10rem);
+            padding: 4.5rem 6rem;
+        }
+
+        &--header-secondary {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-bottom: .5rem;
+
+            & .heading-tertiary {
+                margin-right: 1rem;
+                font-weight: 300;
+            }
+        }
+
+    }
+} 
